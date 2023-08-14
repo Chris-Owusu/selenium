@@ -1,0 +1,10 @@
+package testcases;
+
+import org.openqa.selenium.By;
+
+public class Mail extends New {
+
+	public void mail() {
+		driver.findElement(By.linkText(loc.getProperty("linkTxt"))).click();
+	}
+}

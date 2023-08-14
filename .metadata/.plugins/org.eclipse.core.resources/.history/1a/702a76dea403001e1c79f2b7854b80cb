@@ -1,0 +1,12 @@
+package testSuite;
+
+import org.testng.ITestNGListener;
+import org.testng.ITestResult;
+
+public class listener extends testUtils implements ITestNGListener  {
+	
+	public void onTestStart(ITestResult result) {
+		System.out.println("New Test Begins");
+	}
+
+};

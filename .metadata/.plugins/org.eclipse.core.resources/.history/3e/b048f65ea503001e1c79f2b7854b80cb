@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="listener Group suite">
+	<listeners>
+		<listener class-name="testSuite.listener" />
+		<!-- <listener class-name="testSuite.RetryListener" /> -->
+	</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <!-- <class name="ui.Groups"/> --> 
+      <!-- <class name="ui.Try"/> -->
+      <class name="ui.Reports"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- listener Group suite -->

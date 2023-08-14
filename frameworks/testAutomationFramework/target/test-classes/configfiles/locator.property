@@ -1,0 +1,14 @@
+signInBtn = Sign in
+emailField = login_id
+nxtBtn1 = nextbtn
+passwordField = (//input[@id='password'])[1]
+nxtBtn2 = nextbtn
+linkTxt =  BI & Analytics
+analytics = (//small[contains(text(),'Modern self-service BI and analytics platform.')])[2]
+analyticsTxt = div[class='zp-home-left'] h1
+
+
+
+
+
+

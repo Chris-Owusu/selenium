@@ -1,0 +1,29 @@
+package testcases;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import base.BaseTest;
+
+
+public class New extends BaseTest {
+
+	@Test
+	public void newOne(String email, String password) throws InterruptedException {
+		driver.findElement(By.linkText(loc.getProperty("signInBtn"))).click();
+		driver.findElement(By.id(loc.getProperty("emailField"))).sendKeys(email);
+		driver.findElement(By.id(loc.getProperty("nxtBtn1"))).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(loc.getProperty("passwordField"))).sendKeys(password);
+		driver.findElement(By.id(loc.getProperty("nxtBtn2"))).click();
+	}
+	
+	@DataProvider
+	public Object[][] tData() {
+		return new Object[][] {
+			{"owusuahenkorahchristopher@gmail.com", "8vMEeUp!rNkd88E"}
+		};
+	}
+
+}

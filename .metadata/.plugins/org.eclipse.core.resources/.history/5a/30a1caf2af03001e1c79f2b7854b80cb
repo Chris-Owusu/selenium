@@ -1,0 +1,22 @@
+package testSuite;
+
+
+import org.testng.ITestNGListener;
+import org.testng.Reporter;
+
+import utilities.TestUtils;
+
+public class Listener extends TestUtils implements ITestNGListener  {
+	
+	
+
+};
+
+//public void onTestStart​(ITestResult result) {
+//	Reporter.log("Method running is....."+result.getName());
+//	System.out.println("New Test Begins");
+//}
+//
+//public void onTestSuccess​(ITestResult result) {
+//	Reporter.log("Status of execution is....."+result.getStatus());
+//}
